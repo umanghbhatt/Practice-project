@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>My_bookings</title>
+    <style>
+        
+    </style>
+    <script src="My_bookings_Js.js"></script>
+</head>
+22
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="">My Bookings</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="BT20CSE058-Assignment-Website.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">24/7 Ekendra</a>
+                </li>
+            </ul>
+           
+        </div>
+    </nav>
+
+            <button  id="add" class="btn-primary" ><a href="Reservation.xhtml" style="color:yellow">Add Booking</a></button>
+            <button  id="clear" class="btn-primary" style="color: yellow;" onclick="clearStorage()">Delete all Bookings</button>
+         
+
+        <div id="my_bookings" class="my-4">
+            <h2>Your Bookings</h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Train No.</th>
+                    <th scope="col">Coach Booking</th>
+                    <th scope="col">Passanger Name</th>
+                    <th scope="col">Aadhar No.</th>
+                    <th scope="col">Date of Travel</th>
+                    <th scope="col">Actions</th> 
+                  </tr>
+                </thead>
+                <tbody id="tableBody">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>121610</td>
+                    <td>AC 2nd_tier</td>
+                    <td>ABC XYZ</td>
+                    <td>91xxxxxx99</td>
+                    <td>25th-Jun-2020</td>
+                    <td><button class="btn btn-sm btn-primary">Cancel Booking</button></td> 
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</body>
+
+</html>

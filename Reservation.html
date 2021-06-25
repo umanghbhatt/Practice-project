@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation FORM</title>
+    <link rel="stylesheet" href="styleReservationform.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="Mh">RSERVATION AND PAYMENT DETAILS</h1><hr>
+        <h2>Contact Details</h2>
+        <p>NAME: <input type="text" placeholder="Enter your Name" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="Gender" id="" required>  Female<input type="radio" name="Gender" id="" required>
+            </p>
+        </fieldset>
+        <p>Aadhar Details: <input type="number" name="Aadhar Number" placeholder="12xx xxxx xx56" id="UID" required></p>
+        <p>Address: <textarea name="address" placeholder="Enter Address here" id="address" cols="100" rows="10" required></textarea></p>
+        <p>Email: <input type="email" placeholder="xxxx123@mail.com" name="email" id="" required></p>
+        <p>Pincode: <input type="number" name="pincode" placeholder="12xx56" id="pincode" required></p>
+        <br><hr>
+        <h2>Reservation Details</h2>
+        <p>Train No: <input type="number" name="trainno" placeholder="12xxxx6" id="trainno" required></p>
+        <p>Date of Travel: <input type="date" placeholder="dd/mm/yyyy" name="Travel_Date" id="Travel_Date" required></p>
+        <p>
+            Coach Type:
+            <select name="coach_type" id="coach_type" required>
+                <option value="">--Select a Coach Type--</option>
+                <option value="1st_class"><a>AC 1st Class</a></option>
+                <option value="2nd_tier" ><a>AC 2 Tier</a></option>
+                <option value="3rd_tier"><a>AC 3 Tier</a></option>
+                <option value="sleeper"><a>Sleeper</a></option>
+                <option value="sleeper_2"><a>Sleeper Tier 2</a></option>
+                <option value="GEN"><a>General</a></option>
+                <option value="AC_chair"><a>AC Chair Coach</a></option>
+                <option value="Chair_car"><a>Chair Car</a></option>
+            </select>
+        </p>
+        <br><hr>
+        <h2>Payment Details</h2>
+        <p>
+            Card Type:
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="Visa"><a>Visa</a></option>
+                <option value="MasterCard" ><a>MasterCard</a></option>
+                <option value="Rupay"><a>Rupay</a></option>
+                <option value="AmericanExpress"><a>AmericanExpress</a></option>
+            </select>
+        </p>
+        <p>
+            Card Number: <input type="number" placeholder="12xx-xxxx-xxxx-x789" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiry Date: <input type="date" placeholder="dd/mm/yyyy" name="Expiry_Date" id="Expiry_Date" required>
+        </p>
+        <p>CVV: <input type="password" name="CVV" placeholder="CVV" id="CVV" required></p>
+        <input type="submit" value="Pay Now">
+    </form>
+    </div>
+</body>
+</html>
